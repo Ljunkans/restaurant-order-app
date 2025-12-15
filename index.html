@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Jimmy's Diner</h1>
+      <h2>The best burgers and pizzas in town</h2>
+    </header>
+
+    <main>
+      <div id="items-container"></div>
+      <div id="cart-container">
+        <div id="cart-heading">
+          <h3>Your Order</h3>
+        </div>
+
+        <div id="selected-item">
+          <p id="selected-name"></p>
+          <p id="remove-item">remove</p>
+        </div>
+        <div>
+          <p id="selected-price"></p>
+        </div>
+
+        <button id="completeorder-button" class="btn-primary">
+          Complete order
+        </button>
+      </div>
+
+      <div id="checkout-container">
+        <button id="close-checkout">&times;</button>
+        <h2 id="checkout-heading">Enter random card details</h2>
+        <form id="checkout-form">
+          <input type="text" placeholder="Enter your name" id="name" />
+          <input
+            type="number"
+            placeholder="Enter Card number"
+            id="card-number"
+          />
+          <input type="number" placeholder="Enter CVV" id="cvv" />
+
+          <input type="submit" class="btn-primary" value="Pay" />
+        </form>
+      </div>
+
+      <div id="order-complete-container">
+        <p id="order-complete-text"></p>
+      </div>
+    </main>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

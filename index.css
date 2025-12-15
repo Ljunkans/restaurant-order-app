@@ -109,7 +109,7 @@ p {
 }
 
 .btn-round:hover {
-  background-color: ;
+  background-color: var(--color-gray-light);
 }
 
 #addtocart-button {
